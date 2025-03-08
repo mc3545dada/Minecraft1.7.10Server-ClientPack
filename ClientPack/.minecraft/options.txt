@@ -1,0 +1,164 @@
+invertYMouse:false
+mouseSensitivity:0.37323943
+fov:0.0
+gamma:0.0
+saturation:0.0
+renderDistance:16
+guiScale:0
+particles:0
+bobView:true
+anaglyph3d:false
+advancedOpengl:false
+maxFps:260
+fboEnable:true
+difficulty:3
+fancyGraphics:true
+ao:1
+clouds:true
+resourcePacks:[]
+lastServer:
+lang:zh_CN
+chatVisibility:0
+chatColors:true
+chatLinks:true
+chatLinksPrompt:true
+chatOpacity:1.0
+snooperEnabled:true
+fullscreen:false
+enableVsync:false
+hideServerAddress:false
+advancedItemTooltips:false
+pauseOnLostFocus:true
+showCape:true
+touchscreen:false
+overrideWidth:0
+overrideHeight:0
+heldItemTooltips:true
+chatHeightFocused:1.0
+chatHeightUnfocused:0.44366196
+chatScale:1.0
+chatWidth:1.0
+showInventoryAchievementHint:false
+mipmapLevels:4
+anisotropicFiltering:1
+streamBytesPerPixel:0.5
+streamMicVolume:1.0
+streamSystemVolume:1.0
+streamKbps:0.5412844
+streamFps:0.31690142
+streamCompression:1
+streamSendMetadata:true
+streamPreferredServer:
+streamChatEnabled:0
+streamChatUserFilter:0
+streamMicToggleBehavior:0
+forceUnicodeFont:false
+key_key.attack:-100
+key_key.use:-99
+key_key.forward:17
+key_key.left:30
+key_key.back:31
+key_key.right:32
+key_key.jump:57
+key_key.sneak:42
+key_key.drop:16
+key_key.inventory:18
+key_key.chat:20
+key_key.playerlist:15
+key_key.pickItem:-98
+key_key.command:53
+key_key.screenshot:60
+key_key.togglePerspective:63
+key_key.smoothCamera:0
+key_key.sprint:29
+key_key.streamStartStop:64
+key_key.streamPauseUnpause:65
+key_key.streamCommercial:0
+key_key.streamToggleMic:0
+key_key.fullscreen:87
+key_key.hotbar.1:2
+key_key.hotbar.2:3
+key_key.hotbar.3:4
+key_key.hotbar.4:5
+key_key.hotbar.5:6
+key_key.hotbar.6:7
+key_key.hotbar.7:8
+key_key.hotbar.8:9
+key_key.hotbar.9:10
+key_OptiFine缩放:29
+key_ALT Key:56
+key_Boost Key:29
+key_Mode Switch Key:13
+key_Side Inventory Key:46
+key_Hub Expand Key:45
+key_key.OpenTerminal:0
+key_key.OpenMagnetFilter:0
+key_key.SwitchMagnetMode:0
+key_Quest Log:38
+key_Open CraftGuide:34
+key_Mo'Bends Menu:34
+key_Gravi Fly Key:33
+key_Gravi Display Hud:35
+key_Key.SlashBlade.PS:-98
+key_Key.SlashBlade.SA:47
+key_Key.SlashBlade.LO:42
+key_Key.SlashBlade.CA:29
+key_[GS] 切换头盔中的传感器:33
+key_keybind.togglechest.name:34
+key_keybind.togglelegs.name:35
+key_keybind.toggleboots.name:36
+key_Baubles Inventory:48
+key_Change Wand Focus:12
+key_Activate Hover Harness:35
+key_Misc Wand Toggle:34
+key_waila.keybind.wailaconfig:82
+key_waila.keybind.wailadisplay:79
+key_waila.keybind.liquid:80
+key_waila.keybind.recipe:81
+key_waila.keybind.usage:75
+key_[GC] 星系地图:50
+key_[GC]打开飞船仓库:33
+key_[GC]切换传感器护目镜模式:37
+key_Mekanism 模式切换:50
+key_Mekanism 装甲模式切换:33
+key_Mekanism 声音:22
+key_invtweaks.key.sort:19
+key_Dynamic Lights toggle:38
+key_Unequip:44
+key_key.NegoreRouse.specialMagneticStorm:50
+key_key.NegoreRouse.specialMagneticStormTier:50
+key_滑翔开关:34
+key_声波定位:38
+key_夜视:25
+key_揭示护目镜:19
+key_步行辅助:0
+key_速度:0
+key_跳跃:0
+key_以太扳手模式:21
+key_电磁铁:0
+key_ttmisc.toggleArmor:22
+key_pe.key.armor_toggle:33
+key_pe.key.charge:47
+key_pe.key.extra_function:46
+key_pe.key.fire_projectile:19
+key_pe.key.mode:39
+key_key.placeItem:25
+key_key.toolConfig:46
+key_key.toolProfileChange:43
+key_key.toggleFlight:0
+key_keys.armourersworkshop.equipmentWardrobe:25
+key_keys.armourersworkshop.undo:44
+key_key.cofh.empower:47
+key_key.cofh.multimode:46
+key_key.control:29
+key_BetterFps:88
+key_key.portaitreposition:52
+soundCategory_master:1.0
+soundCategory_music:0.0
+soundCategory_record:1.0
+soundCategory_weather:0.15492958
+soundCategory_block:1.0
+soundCategory_hostile:1.0
+soundCategory_neutral:1.0
+soundCategory_player:1.0
+soundCategory_ambient:1.0

@@ -1,0 +1,12 @@
+# -----------Plugin made by carl230690--------------
+Prevent:
+  Pickup: true
+  Craft: true
+  Interaction: true
+  Break: true
+  Place: true
+  Confiscate: true
+  Click: true
+Ban Message: This item is banned!
+Confiscate Message: This item is banned and is confiscated!
+Blacklist Click: []

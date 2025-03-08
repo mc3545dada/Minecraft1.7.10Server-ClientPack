@@ -1,0 +1,4 @@
+[14:34:21][FINE][noppes.npcs.client.ClientProxy$FontContainer:601] Thu Feb 06 14:34:21 CST 2025
+[14:34:21][FINE][noppes.npcs.client.ClientProxy:190] Failed loading font so using Arial
+[14:34:21][FINE][noppes.npcs.CustomNpcs:182] Script Engines Available:
+[14:34:21][FINE][noppes.npcs.CustomNpcs:182] Scala: .scala

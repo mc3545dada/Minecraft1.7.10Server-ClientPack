@@ -1,0 +1,31 @@
+[14:38:14][FINE][noppes.npcs.controllers.ScriptController:60] Thu Feb 06 14:38:14 CST 2025
+[14:38:14][FINE][noppes.npcs.CustomNpcs:182] Script Engines Available:
+[14:38:14][FINE][noppes.npcs.CustomNpcs:182] Scala: .scala
+[14:38:46][FINE][noppes.npcs.controllers.LinkedNpcController:29] Loading Linked Npcs
+[14:38:46][FINE][noppes.npcs.controllers.LinkedNpcController:29] Done loading Linked Npcs
+[14:38:55][FINE][noppes.npcs.controllers.DialogController:28] Loading Dialogs
+[14:38:55][FINE][noppes.npcs.controllers.DialogController:28] Done loading Dialogs
+[14:42:47][SEVERE][cpw.mods.fml.common.eventhandler.ASMEventHandler_65_ScriptController_saveWorld_Save:-1] java.io.FileNotFoundException: .\world\customnpcs\scripts\world_data.json (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at noppes.npcs.util.NBTJsonUtil.SaveFile(NBTJsonUtil.java:322)
+	at noppes.npcs.controllers.ScriptController.saveWorld(ScriptController.java:207)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_65_ScriptController_saveWorld_Save.invoke(.dynamic)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54)
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140)
+	at net.minecraft.world.WorldServer.func_73044_a(WorldServer.java:1017)
+	at org.bukkit.craftbukkit.v1_7_R4.CraftWorld.save(CraftWorld.java:800)
+	at autosaveworld.threads.save.AutoSaveThread.saveWorldNormal(AutoSaveThread.java:190)
+	at autosaveworld.threads.save.AutoSaveThread.saveWorld(AutoSaveThread.java:181)
+	at autosaveworld.threads.save.AutoSaveThread.performSaveNow(AutoSaveThread.java:106)
+	at autosaveworld.core.AutoSaveWorld.onDisable(AutoSaveWorld.java:121)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:318)
+	at org.bukkit.plugin.java.JavaPluginLoader.disablePlugin(JavaPluginLoader.java:392)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:429)
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:422)
+	at org.bukkit.craftbukkit.v1_7_R4.CraftServer.disablePlugins(CraftServer.java:364)
+	at net.minecraft.server.MinecraftServer.func_71260_j(MinecraftServer.java:560)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:729)
+	at java.lang.Thread.run(Unknown Source)

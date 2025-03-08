@@ -1,0 +1,126 @@
+#CoreProtect 配置文件
+
+# 如果开启了,在进行回档和还原操作时总是显示附加的数据.
+# 如果禁止了,你可以简单地打开它用加入 "#verbose"
+# 在你的回档或者还原命令的末尾.
+verbose: true
+
+# MySQL是一个扩展选项而不是必须的.
+# 如果你决定使用MySQL,开启下列选项并且填写下面的内容.
+use-mysql: false
+table-prefix: co_
+mysql-host: localhost
+mysql-port: 3306
+mysql-database: database
+mysql-username: root
+mysql-password: 
+
+# 如果开启了, CoreProtect将会在服务器开启时检测有没有新版本.
+# 如果有一个新的更新是有效的,你将会在控制台里面看到提示信息.
+check-updates: true
+
+# 如果开启了, 其他插件将可以使用CoreProtect API.
+api-enabled: true
+
+# 如果没有在使用回档/还原操作时指定一个半径, 这个数值将用来
+# 当做半径. 设置为 "0" 来禁止自动添加半径.
+default-radius: 10
+
+# 在使用一个命令时允许的最高半径. 设置为 "0" 来关闭这个选项.
+# 去使用一个全局的回档或者还原操作, 你可以使用 "r:#global".
+max-radius: 100
+
+# 如果开启了, 物品被从容器中取出(等)操作将会被包括在回档操作中. 
+rollback-items: true
+
+# 如果启用了, 实体, 比如杀死动物, 将会被包括在回档操作者.
+rollback-entities: true
+
+# 如果开启了, 一般的数据, 比如僵尸在日光下燃烧, 将不会被记录.
+skip-generic-data: true
+
+# 记录被玩家放置的方块.
+block-place: true
+
+# 记录被玩家破坏的方块.
+block-break: true
+
+# 记录方块被其他方块破坏; 比如, 一个木牌或者火把
+# 因为一个玩家破坏了它们依靠的方块而掉落. 这是可能是回档对床/门的操作
+# 所必需的.
+natural-break: true
+
+# 可能记录方块移动情况, 比如一个沙子或者沙烁的坠落.
+block-movement: true
+
+# 可能记录下被活塞移动的方块.
+pistons: true
+
+# 记录方块被火焰烧毁.
+block-burn: true
+
+# 记录一个方块自然的点燃, 比如被蔓延的火焰点燃.
+block-ignite: true
+
+# 记录爆炸, 比如一个TNT或者一只苦力怕.
+explosions: true
+
+# 记录实体修改方块, 比如一个末影人破坏了一个方块. 
+entity-change: true
+
+# 记录玩家击杀实体, 比如杀死一头牛和一个末影人.
+entity-kills: true
+
+# 记录木牌上的文本. 如果禁止了,木牌在回档之后将会变成空白的.
+sign-text: true
+
+# 记录岩浆和水源头被玩家使用桶放置/移除.
+buckets: true
+
+# 记录自然的树叶腐败.
+leaf-decay: true
+
+# 记录树的生长. 树会关联到放置那个树苗的玩家身上.
+tree-growth: true
+
+# 记录蘑菇的生长.
+mushroom-growth: true
+
+# 记录藤蔓自然生长.
+vine-growth: true
+
+# 记录传送门比如地狱传送门自然的生成.
+portals: true
+
+# 记录水流. 如果水破坏了其他的方块, 比如火把等,
+# 这也允许它可以被回档.
+water-flow: true
+
+# 记录岩浆流动. 如果岩浆破坏了其他方块, 比如火把等,
+# 这也允许它可以被回档.
+lava-flow: true
+
+# 允许液体记录关联到一个玩家身上.
+# 比如, 如果一个玩家放置了一格水流动并且摧毁了火把, 
+# 它将可以使用回档指定玩家的操作来还原.
+liquid-tracking: true
+
+# 记录物品进出数据, 比如一个玩家从一个箱子、
+# 熔炉、或者发射器中取出物品. 是所有物品回档所必需的选项.
+item-transactions: true
+
+# 记录玩家交互信息, 比如一个玩家打开了一个门, 按下了
+# 一个按钮, 或者打开了一个箱子. 玩家交互信息不能被回档.
+player-interactions: true
+
+# 记录玩家的聊天信息.
+player-messages: true
+
+# 记录所有玩家使用的命令.
+player-commands: true
+
+# 记录所有玩家进入和退出服务器.
+player-sessions: true
+
+# 记录插件 "WorldEdit" 所做的改变如果你在你的服务器里面使用他的话.
+worldedit: true

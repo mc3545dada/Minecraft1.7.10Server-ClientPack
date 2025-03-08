@@ -1,0 +1,645 @@
+{
+    "ReturnToStart": 1b,
+    "NpcInv": [
+    ],
+    "PotionEffect": 0,
+    "Size": 5,
+    "stopAndInteract": 1b,
+    "Resistances": {
+        "Arrow": 1.0f,
+        "Explosion": 1.0f,
+        "Knockback": 1.0f,
+        "Melee": 1.0f
+    },
+    "BossBar": 0b,
+    "RespawnTime": 20,
+    "NpcAngrySound": "",
+    "igJobInventory": {
+        "NpcMiscInv": [
+            {
+                "Slot": 0b,
+                "id": "ThermalExpansion:satchel",
+                "Count": 1b,
+                "tag": {
+                    "Inventory": {
+                        "Slot35": {
+                            "id": 6084s,
+                            "Count": 1b,
+                            "Damage": 0s
+                        },
+                        "Slot13": {
+                            "id": 4098s,
+                            "Count": 1b,
+                            "tag": {
+                                "aqua": 5000,
+                                "terra": 5000,
+                                "ignis": 5000,
+                                "cap": "gold",
+                                "rod": "greatwood",
+                                "ordo": 5000,
+                                "perditio": 5000,
+                                "aer": 5000
+                            },
+                            "Damage": 9s
+                        },
+                        "Slot14": {
+                            "id": 4732s,
+                            "Count": 1b,
+                            "Damage": 19s
+                        },
+                        "Slot15": {
+                            "id": 5227s,
+                            "Count": 16b,
+                            "tag": {
+                                "RepairCost": -10
+                            },
+                            "Damage": 0s
+                        },
+                        "Slot16": {
+                            "id": 1090s,
+                            "Count": 1b,
+                            "Damage": 5s
+                        },
+                        "Slot17": {
+                            "id": 4176s,
+                            "Count": 1b,
+                            "Damage": 1s
+                        },
+                        "Slot18": {
+                            "id": 4648s,
+                            "Count": 1b,
+                            "Damage": 0s
+                        },
+                        "Slot19": {
+                            "id": 5219s,
+                            "Count": 1b,
+                            "tag": {
+                                "charge": 0,
+                                "display": {
+                                    "Name": "GraviTool (Hoe)"
+                                }
+                            },
+                            "Damage": 1s
+                        },
+                        "Slot2": {
+                            "id": 5256s,
+                            "Count": 64b,
+                            "Damage": 0s
+                        },
+                        "Slot3": {
+                            "id": 679s,
+                            "Count": 1b,
+                            "Damage": 0s
+                        },
+                        "Slot4": {
+                            "id": 5177s,
+                            "Count": 1b,
+                            "tag": {
+                                "charge": 9728.0d
+                            },
+                            "Damage": 26s
+                        },
+                        "Slot5": {
+                            "id": 4732s,
+                            "Count": 1b,
+                            "Damage": 14s
+                        },
+                        "Slot20": {
+                            "id": 5256s,
+                            "Count": 64b,
+                            "Damage": 0s
+                        },
+                        "Slot21": {
+                            "id": 495s,
+                            "Count": 64b,
+                            "Damage": 0s
+                        },
+                        "Slot22": {
+                            "id": 4115s,
+                            "Count": 64b,
+                            "Damage": 9s
+                        },
+                        "Slot0": {
+                            "id": 5205s,
+                            "Count": 1b,
+                            "tag": {
+                                "charge": 1.0E7d
+                            },
+                            "Damage": 1s
+                        },
+                        "Slot23": {
+                            "id": 4732s,
+                            "Count": 1b,
+                            "Damage": 13s
+                        },
+                        "Slot1": {
+                            "id": 5021s,
+                            "Count": 1b,
+                            "tag": {
+                                "mode": 0,
+                                "electricity": 971300.0d
+                            },
+                            "Damage": 0s
+                        },
+                        "Slot6": {
+                            "id": 5234s,
+                            "Count": 1b,
+                            "tag": {
+                                "ench": [
+                                    {
+                                        "lvl": 3s,
+                                        "id": 34s
+                                    },
+                                    {
+                                        "lvl": 2s,
+                                        "id": 16s
+                                    },
+                                    {
+                                        "lvl": 1s,
+                                        "id": 17s
+                                    },
+                                    {
+                                        "lvl": 1s,
+                                        "id": 20s
+                                    }
+                                ],
+                                "ModelName": "named/nihil/nihil",
+                                "isDefaultBewitched": 1b,
+                                "CurrentItemName": "flammpfeil.slashblade.named.nihil",
+                                "display": {
+                                    "Name": "妖刀「似蛭」 §e[§6墨§d色§b世§c界§e]§f"
+                                },
+                                "AttackAmplifier": -6.0f,
+                                "TextureName": "named/nihil/nihil",
+                                "SpecialAttackType": 1,
+                                "CustomMaxDamage": 45,
+                                "baseAttackModifier": 8.0f,
+                                "SB.SEffect": {
+                                },
+                                "AttributeModifiers": [
+                                    {
+                                        "UUIDMost": -3801225194067177672L,
+                                        "UUIDLeast": -6586624321849018929L,
+                                        "Amount": 2.0d,
+                                        "AttributeName": "generic.attackDamage",
+                                        "Operation": 0,
+                                        "Name": "Weapon modifier"
+                                    }
+                                ],
+                                "StandbyRenderType": 1
+                            },
+                            "Damage": 0s
+                        },
+                        "Slot7": {
+                            "id": 1491s,
+                            "Count": 1b,
+                            "Damage": 0s
+                        },
+                        "Slot8": {
+                            "id": 4119s,
+                            "Count": 1b,
+                            "Damage": 0s
+                        },
+                        "Slot9": {
+                            "id": 4200s,
+                            "Count": 1b,
+                            "Damage": 0s
+                        },
+                        "Slot24": {
+                            "id": 5227s,
+                            "Count": 1b,
+                            "tag": {
+                            },
+                            "Damage": 2s
+                        },
+                        "Slot25": {
+                            "id": 50s,
+                            "Count": 64b,
+                            "Damage": 0s
+                        },
+                        "Slot26": {
+                            "id": 5245s,
+                            "Count": 1b,
+                            "tag": {
+                            },
+                            "Damage": 0s
+                        },
+                        "Slot27": {
+                            "id": 5178s,
+                            "Count": 1b,
+                            "tag": {
+                            },
+                            "Damage": 1s
+                        },
+                        "Slot28": {
+                            "id": 5254s,
+                            "Count": 1b,
+                            "tag": {
+                                "mana": 500000
+                            },
+                            "Damage": 0s
+                        },
+                        "Slot29": {
+                            "id": 5256s,
+                            "Count": 64b,
+                            "Damage": 0s
+                        },
+                        "Slot30": {
+                            "id": 574s,
+                            "Count": 4b,
+                            "Damage": 0s
+                        },
+                        "Slot31": {
+                            "id": 4120s,
+                            "Count": 1b,
+                            "Damage": 0s
+                        },
+                        "Slot32": {
+                            "id": 4732s,
+                            "Count": 1b,
+                            "Damage": 15s
+                        },
+                        "Slot10": {
+                            "id": 5217s,
+                            "Count": 1b,
+                            "tag": {
+                                "charge": 3000000.0d
+                            },
+                            "Damage": 1s
+                        },
+                        "Slot11": {
+                            "id": 5256s,
+                            "Count": 64b,
+                            "Damage": 0s
+                        },
+                        "Slot33": {
+                            "id": 5227s,
+                            "Count": 4b,
+                            "tag": {
+                                "RepairCost": -25
+                            },
+                            "Damage": 1s
+                        },
+                        "Slot12": {
+                            "id": 764s,
+                            "Count": 1b,
+                            "Damage": 2s
+                        }
+                    },
+                    "Accessible": 1b
+                },
+                "Damage": 4s
+            }
+        ]
+    },
+    "ReactsToFire": 0b,
+    "igLines": [
+        {
+            "Line": "新手礼包qwq {player}"
+        }
+    ],
+    "IgnoreCobweb": 0b,
+    "PositionOffsetZ": 5.0f,
+    "PositionOffsetY": 5.0f,
+    "PositionOffsetX": 5.0f,
+    "igAvailability": {
+        "AvailabilityQuestId": -1,
+        "AvailabilityFactionStance": 0,
+        "AvailabilityQuest": 0,
+        "AvailabilityDialog4": 0,
+        "AvailabilityDialog3": 0,
+        "AvailabilityQuest2": 0,
+        "AvailabilityQuest3": 0,
+        "AvailabilityQuest4": 0,
+        "ModRev": 16,
+        "AvailabilityDialog2": 0,
+        "AvailabilityDayTime": 0,
+        "AvailabilityFaction2Id": -1,
+        "AvailabilityFaction": 0,
+        "AvailabilityDialog": 0,
+        "AvailabilityFaction2": 0,
+        "AvailabilityFactionId": -1,
+        "AvailabilityFaction2Stance": 0,
+        "AvailabilityDialogId": -1,
+        "AvailabilityQuest4Id": -1,
+        "AvailabilityQuest3Id": -1,
+        "AvailabilityQuest2Id": -1,
+        "AvailabilityDialog2Id": -1,
+        "AvailabilityDialog3Id": -1,
+        "AvailabilityDialog4Id": -1,
+        "AvailabilityMinPlayerLevel": 0
+    },
+    "LootMode": 0,
+    "TransformHasAI": 0b,
+    "AttackStrenght": 5,
+    "PersistenceRequired": 0b,
+    "id": "customnpcs.CustomNpc",
+    "HealF": 20.0f,
+    "MovingPatern": 0,
+    "NpcLines": {
+        "Lines": [
+        ]
+    },
+    "DefendFaction": 0b,
+    "FireIndirect": 0,
+    "NpcVisible": 0,
+    "LinkedNpcName": "",
+    "Bukkit.updateLevel": 2,
+    "FindShelter": 2,
+    "ScriptsContainers": [
+    ],
+    "Air": 300s,
+    "TacticalVariant": 0,
+    "Orientation": 0,
+    "ScriptLanguage": "ECMAScript",
+    "KnockBack": 0,
+    "TransformHasJob": 0b,
+    "CustomName": "",
+    "CanDespawn": 0b,
+    "BurnInSun": 0b,
+    "StandingState": 0,
+    "AttackInvisible": 0b,
+    "HurtTime": 0s,
+    "WorldUUIDLeast": -5905060368842971074L,
+    "WalkingRange": 10,
+    "CustomNameVisible": 0b,
+    "ShotCount": 1,
+    "pDur": 5,
+    "AttackRange": 2,
+    "NpcKillLines": {
+        "Lines": [
+        ]
+    },
+    "PotionImmune": 0b,
+    "AvoidsSun": 0b,
+    "Texture": "customnpcs:textures/entity/humanmale/SteampunkSteve.png",
+    "NpcJob": 4,
+    "BurstCount": 1,
+    "NpcAttackLines": {
+        "Lines": [
+        ]
+    },
+    "pSpeed": 10,
+    "pArea": 0,
+    "DeathTime": 0s,
+    "pImpact": 0,
+    "DropChances": [
+        0.085f,
+        0.085f,
+        0.085f,
+        0.085f,
+        0.085f
+    ],
+    "MoveState": 0,
+    "RangeAndMelee": 0,
+    "pRender3D": 0b,
+    "igCooldown": 10,
+    "Motion": [
+        0.0d,
+        -0.0784000015258789d,
+        0.0d
+    ],
+    "CombatRegen": 0,
+    "pEffect": 0,
+    "DistanceToMelee": 4,
+    "NpcStepSound": "",
+    "FireRate": 5,
+    "pEffAmp": 0,
+    "OnGround": 1b,
+    "Dimension": 0,
+    "ImmuneToFire": 0b,
+    "NpcKilledLines": {
+        "Lines": [
+        ]
+    },
+    "UUIDMost": 1281711942652676944L,
+    "igGivingMethod": 1,
+    "Fire": -1s,
+    "DisablePitch": 0b,
+    "pPhysics": 1b,
+    "TransformHasInv": 0b,
+    "NpcInteractLines": {
+        "Lines": [
+            {
+                "Line": "Hello @p",
+                "Song": "",
+                "Slot": 0
+            }
+        ]
+    },
+    "pSpin": 0b,
+    "NpcHurtSound": "minecraft:game.player.hurt",
+    "pTrail": 0,
+    "CreatureType": 0,
+    "Attributes": [
+        {
+            "Base": 20.0d,
+            "Name": "generic.maxHealth"
+        },
+        {
+            "Base": 0.0d,
+            "Name": "generic.knockbackResistance"
+        },
+        {
+            "Base": 0.25d,
+            "Name": "generic.movementSpeed"
+        },
+        {
+            "Base": 32.0d,
+            "Name": "generic.followRange"
+        },
+        {
+            "Base": 5.0d,
+            "Name": "generic.attackDamage"
+        }
+    ],
+    "Invulnerable": 0b,
+    "TransformHasDisplay": 0b,
+    "NoFallDamage": 0b,
+    "AbsorptionAmount": 0.0f,
+    "TransformHasRole": 0b,
+    "Name": "向导",
+    "FallDistance": 0.0f,
+    "NpcIdleSound": "",
+    "Weapons": [
+    ],
+    "NPCDialogOptions": [
+    ],
+    "WorldUUIDMost": -6923845553473237849L,
+    "AggroRange": 16,
+    "DirectLOS": 1b,
+    "HealthRegen": 1,
+    "NpcModelData": {
+        "LegsConfig": {
+            "ScaleZ": 1.0f,
+            "TransZ": 0.0f,
+            "TransY": 0.0f,
+            "TransX": 0.0f,
+            "ScaleY": 1.0f,
+            "ScaleX": 1.0f
+        },
+        "BodyConfig": {
+            "ScaleZ": 1.0f,
+            "TransZ": 0.0f,
+            "TransY": 0.0f,
+            "TransX": 0.0f,
+            "ScaleY": 1.0f,
+            "ScaleX": 1.0f
+        },
+        "LegParts": {
+            "Type": 0b,
+            "PlayerTexture": 1b,
+            "Color": 16777215
+        },
+        "Parts": [
+        ],
+        "Breasts": 0b,
+        "Headwear": 2b,
+        "ArmsConfig": {
+            "ScaleZ": 1.0f,
+            "TransZ": 0.0f,
+            "TransY": 0.0f,
+            "TransX": 0.0f,
+            "ScaleY": 1.0f,
+            "ScaleX": 1.0f
+        },
+        "ExtraData": {
+        },
+        "HeadConfig": {
+            "ScaleZ": 1.0f,
+            "TransZ": 0.0f,
+            "TransY": 0.0f,
+            "TransX": 0.0f,
+            "ScaleY": 1.0f,
+            "ScaleX": 1.0f
+        }
+    },
+    "Spigot.ticksLived": 93362,
+    "igCooldownType": 1,
+    "minDelay": 20,
+    "DoorInteract": 2,
+    "MoveSpeed": 5,
+    "TransformEditingModus": 0b,
+    "UsingSkinUrl": 0b,
+    "Leashed": 0b,
+    "SkinUrl": "",
+    "CanSwim": 1b,
+    "MaxHealth": 20,
+    "HideBodyWhenKilled": 0b,
+    "AttackSpeed": 20,
+    "PotionDuration": 5,
+    "maxDelay": 40,
+    "ScriptEnabled": 0b,
+    "Role": 0,
+    "DropChance": [
+        {
+            "Integer": 100,
+            "Slot": 0
+        },
+        {
+            "Integer": 100,
+            "Slot": 1
+        },
+        {
+            "Integer": 100,
+            "Slot": 2
+        },
+        {
+            "Integer": 100,
+            "Slot": 3
+        },
+        {
+            "Integer": 100,
+            "Slot": 4
+        },
+        {
+            "Integer": 100,
+            "Slot": 5
+        },
+        {
+            "Integer": 100,
+            "Slot": 6
+        },
+        {
+            "Integer": 100,
+            "Slot": 7
+        },
+        {
+            "Integer": 100,
+            "Slot": 8
+        }
+    ],
+    "FactionPoints": {
+        "DecreaseFaction1Points": 0b,
+        "OptionFaction2Points": 100,
+        "OptionFactions1": -1,
+        "OptionFactions2": -1,
+        "OptionFaction1Points": 100,
+        "DecreaseFaction2Points": 0b
+    },
+    "pDamage": 4,
+    "KilledTime": 0L,
+    "AimWhileShooting": 0b,
+    "CanPickUpLoot": 0b,
+    "AttackOtherFactions": 0b,
+    "CanDrown": 1b,
+    "AttackTime": 0s,
+    "pSize": 5,
+    "CanSprint": 0b,
+    "CanLeap": 0b,
+    "TransformIsActive": 0b,
+    "ForgeData": {
+    },
+    "MovingState": 0,
+    "MovingPos": 0,
+    "PotionAmp": 0,
+    "OnAttack": 3,
+    "TacticalRadius": 8,
+    "MaxExp": 0,
+    "OrderedLines": 0b,
+    "PortalCooldown": 0,
+    "pGlows": 0b,
+    "TransformHasAdvanced": 0b,
+    "TransformHasStats": 0b,
+    "FiringSound": "random.bow",
+    "ModRev": 16,
+    "Accuracy": 60,
+    "MinExp": 0,
+    "Armor": [
+    ],
+    "CloakTexture": "",
+    "GlowTexture": "",
+    "MaxFiringRange": 15,
+    "pXlr8": 0b,
+    "ItemGiverId": 0,
+    "UUIDLeast": 4021700903996975207L,
+    "Health": 20s,
+    "pExplode": 0b,
+    "pStick": 0b,
+    "MovingPause": 1b,
+    "NpcDeathSound": "minecraft:game.player.hurt",
+    "FactionID": 0,
+    "Title": "这里是主城(虽然有点小）（",
+    "TotalTicksAlive": 93362L,
+    "Rotation": [
+        919.9435f,
+        0.0f
+    ],
+    "ShowName": 0,
+    "npcInteracting": 1b,
+    "AvoidsWater": 0b,
+    "Equipment": [
+        {
+        },
+        {
+        },
+        {
+        },
+        {
+        },
+        {
+        }
+    ],
+    "NoLivingAnimation": 0b,
+    "SpawnCycle": 0
+}

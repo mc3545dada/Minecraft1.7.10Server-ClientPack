@@ -1,0 +1,33 @@
+# MaxMobs: Max amount of total mobs allowed alive at any given time
+# MonsterLimit: The max hostile mobs at any given time
+# AnimalLimit: The max friendly mobs at any given time
+Enabled: true
+MaxMobs: 2500
+worlds:
+  world:
+    monsterLimit: 2400
+    animalLimit: 2400
+  DIM7:
+    monsterLimit: 2400
+    animalLimit: 2400
+  DIM-19:
+    monsterLimit: 2400
+    animalLimit: 2400
+  DIM-42:
+    monsterLimit: 2400
+    animalLimit: 2400
+  DIM2:
+    monsterLimit: 2400
+    animalLimit: 2400
+  DIM-100:
+    monsterLimit: 2400
+    animalLimit: 2400
+  DIM1:
+    monsterLimit: 2400
+    animalLimit: 2400
+  DIM-1:
+    monsterLimit: 2400
+    animalLimit: 2400
+  DIM-105:
+    monsterLimit: 2400
+    animalLimit: 2400

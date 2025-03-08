@@ -1,0 +1,338 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 25-2-1 下午10:14
+Description: Updating screen events
+
+java.lang.NullPointerException: Updating screen events
+	at org.jglrxavpok.mods.decraft.item.uncrafting.UncraftingManager.removeItemsFromOutputByDamage(UncraftingManager.java:314)
+	at org.jglrxavpok.mods.decraft.item.uncrafting.UncraftingManager.findMatchingRecipes(UncraftingManager.java:196)
+	at org.jglrxavpok.mods.decraft.item.uncrafting.UncraftingManager.getUncraftingResult(UncraftingManager.java:44)
+	at org.jglrxavpok.mods.decraft.inventory.ContainerUncraftingTable.func_75130_a(ContainerUncraftingTable.java:384)
+	at net.minecraft.inventory.InventoryCrafting.func_70299_a(SourceFile:81)
+	at net.minecraft.inventory.Slot.func_75215_d(Slot.java:77)
+	at net.minecraft.inventory.Container.func_75144_a(SourceFile:157)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.func_78753_a(PlayerControllerMP.java:419)
+	at codechicken.nei.guihook.GuiContainerManager.handleSlotClick(GuiContainerManager.java:504)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146984_a(GuiContainer.java:638)
+	at net.minecraft.client.gui.inventory.GuiContainer.public_func_146984_a(GuiContainer.java)
+	at codechicken.nei.guihook.DefaultSlotClickHandler.callHandleMouseClick(DefaultSlotClickHandler.java)
+	at codechicken.nei.guihook.DefaultSlotClickHandler.handleSlotClick(DefaultSlotClickHandler.java:17)
+	at codechicken.nei.guihook.GuiContainerManager.handleMouseClick(GuiContainerManager.java:453)
+	at net.minecraft.client.gui.inventory.GuiContainer.managerHandleMouseClick(GuiContainer.java)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146286_b(GuiContainer.java:590)
+	at net.minecraft.client.gui.GuiScreen.func_146274_d(GuiScreen.java:306)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146274_d(GuiContainer.java)
+	at net.minecraft.client.gui.GuiScreen.func_146269_k(GuiScreen.java:268)
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1640)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:973)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:898)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at org.jglrxavpok.mods.decraft.item.uncrafting.UncraftingManager.removeItemsFromOutputByDamage(UncraftingManager.java:314)
+	at org.jglrxavpok.mods.decraft.item.uncrafting.UncraftingManager.findMatchingRecipes(UncraftingManager.java:196)
+	at org.jglrxavpok.mods.decraft.item.uncrafting.UncraftingManager.getUncraftingResult(UncraftingManager.java:44)
+	at org.jglrxavpok.mods.decraft.inventory.ContainerUncraftingTable.func_75130_a(ContainerUncraftingTable.java:384)
+	at net.minecraft.inventory.InventoryCrafting.func_70299_a(SourceFile:81)
+	at net.minecraft.inventory.Slot.func_75215_d(Slot.java:77)
+	at net.minecraft.inventory.Container.func_75144_a(SourceFile:157)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.func_78753_a(PlayerControllerMP.java:419)
+	at codechicken.nei.guihook.GuiContainerManager.handleSlotClick(GuiContainerManager.java:504)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146984_a(GuiContainer.java:638)
+	at net.minecraft.client.gui.inventory.GuiContainer.public_func_146984_a(GuiContainer.java)
+	at codechicken.nei.guihook.DefaultSlotClickHandler.callHandleMouseClick(DefaultSlotClickHandler.java)
+	at codechicken.nei.guihook.DefaultSlotClickHandler.handleSlotClick(DefaultSlotClickHandler.java:17)
+	at codechicken.nei.guihook.GuiContainerManager.handleMouseClick(GuiContainerManager.java:453)
+	at net.minecraft.client.gui.inventory.GuiContainer.managerHandleMouseClick(GuiContainer.java)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146286_b(GuiContainer.java:590)
+	at net.minecraft.client.gui.GuiScreen.func_146274_d(GuiScreen.java:306)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146274_d(GuiContainer.java)
+	at net.minecraft.client.gui.GuiScreen.func_146269_k(GuiScreen.java:268)
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1640)
+
+-- Affected screen --
+Details:
+	Screen name: org.jglrxavpok.mods.decraft.client.gui.inventory.GuiUncraftingTable
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [GCEntityClientPlayerMP['mc3545dada'/62468, l='MpServer', x=224.38, y=65.62, z=239.50]]
+	Chunk stats: MultiplayerChunkCache: 400, 400
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (192,64,256), Chunk: (at 0,4,0 in 12,16; contains blocks 192,0,256 to 207,255,271), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 1484519 game time, 1580495 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 63 total; [EntityZombie['僵尸'/6150, l='MpServer', x=41.70, y=-12.62, z=41.65], GCEntityClientPlayerMP['mc3545dada'/62468, l='MpServer', x=224.38, y=65.62, z=239.50], EntitySheep['羊'/134, l='MpServer', x=173.84, y=63.00, z=252.78], EntitySheep['羊'/135, l='MpServer', x=174.22, y=64.00, z=220.50], EntitySheep['羊'/136, l='MpServer', x=175.22, y=63.00, z=246.31], EntitySheep['羊'/142, l='MpServer', x=177.50, y=70.00, z=191.50], EntitySheep['羊'/143, l='MpServer', x=180.47, y=64.00, z=192.63], EntitySheep['羊'/144, l='MpServer', x=174.97, y=64.00, z=184.03], EntitySheep['羊'/145, l='MpServer', x=183.94, y=64.00, z=198.59], EntityCustomNpc['沙包'/31379, l='MpServer', x=215.31, y=64.00, z=240.69], EntitySheep['羊'/148, l='MpServer', x=161.81, y=63.00, z=232.19], EntitySheep['羊'/157, l='MpServer', x=190.97, y=64.00, z=285.06], EntitySheep['羊'/158, l='MpServer', x=177.16, y=63.00, z=252.13], EntitySheep['羊'/162, l='MpServer', x=194.44, y=64.00, z=290.38], EntitySheep['羊'/165, l='MpServer', x=185.25, y=67.00, z=190.13], EntitySkeleton['骷髅'/31912, l='MpServer', x=-55.69, y=-0.62, z=31.38], EntityCustomNpc['向导'/7876, l='MpServer', x=215.31, y=64.00, z=238.53], EntityCaveSpider['洞穴蜘蛛'/6856, l='MpServer', x=-25.07, y=-0.00, z=20.29], EntitySheep['羊'/202, l='MpServer', x=250.47, y=77.00, z=181.22], EntitySheep['羊'/203, l='MpServer', x=250.38, y=68.00, z=204.78], EntityItem['item.item.string'/79565, l='MpServer', x=229.91, y=71.13, z=185.31], EntitySheep['羊'/204, l='MpServer', x=217.84, y=71.00, z=175.47], EntitySheep['羊'/205, l='MpServer', x=256.31, y=67.00, z=181.13], EntitySheep['羊'/214, l='MpServer', x=261.47, y=65.00, z=179.38], EntitySheep['羊'/216, l='MpServer', x=254.94, y=68.00, z=186.13], EntitySheep['羊'/228, l='MpServer', x=282.50, y=70.00, z=181.50], EntityItem['item.item.bone'/80101, l='MpServer', x=187.53, y=64.13, z=227.22], EntitySheep['羊'/229, l='MpServer', x=284.81, y=64.00, z=182.56], EntitySheep['羊'/230, l='MpServer', x=283.69, y=64.00, z=183.84], EntitySheep['羊'/231, l='MpServer', x=276.53, y=64.00, z=175.28], EntityZombie['僵尸'/151822, l='MpServer', x=54.94, y=-7.62, z=23.77], EntityCreeper['爬行者'/80143, l='MpServer', x=168.50, y=63.00, z=222.50], EntityCreeper['爬行者'/80145, l='MpServer', x=165.50, y=63.00, z=226.50], EntityItem['item.item.chickenRaw'/79677, l='MpServer', x=217.13, y=64.13, z=234.03], EntityCreeper['爬行者'/80198, l='MpServer', x=268.63, y=63.00, z=249.91], EntityCreeper['爬行者'/80202, l='MpServer', x=272.50, y=63.00, z=260.50], EntityXPOrb['经验球'/80205, l='MpServer', x=236.34, y=68.25, z=209.94], EntitySpider['蜘蛛'/80215, l='MpServer', x=262.25, y=64.00, z=223.78], EntityZombie['僵尸'/80230, l='MpServer', x=178.94, y=64.00, z=298.41], EntityItem['item.item.bone'/80233, l='MpServer', x=172.78, y=63.13, z=281.19], EntitySkeleton['骷髅'/80248, l='MpServer', x=202.50, y=67.00, z=185.50], EntitySkeleton['骷髅'/80252, l='MpServer', x=182.50, y=68.00, z=174.50], EntityBrainyZombie['红眼僵尸'/80265, l='MpServer', x=267.78, y=60.85, z=267.22], EntityXPOrb['经验球'/79755, l='MpServer', x=247.53, y=64.25, z=221.41], EntitySkeleton['骷髅'/80267, l='MpServer', x=274.50, y=63.00, z=261.50], EntityLycorisradiataGreen['绿色彼岸花'/80278, l='MpServer', x=273.50, y=15.00, z=278.50], EntitySpider['蜘蛛'/161194, l='MpServer', x=-55.23, y=-0.09, z=-31.84], EntityCreeper['爬行者'/80296, l='MpServer', x=262.50, y=64.00, z=186.50], EntityBabySkeleton['Baby Skeleton'/80305, l='MpServer', x=263.50, y=64.00, z=225.50], EntityCreeper['爬行者'/80308, l='MpServer', x=260.50, y=64.00, z=222.50], EntityItem['item.item.bone'/79810, l='MpServer', x=249.66, y=64.13, z=263.75], EntityZombie['僵尸'/80327, l='MpServer', x=217.50, y=71.00, z=189.50], EntitySpider['蜘蛛'/80326, l='MpServer', x=215.91, y=71.00, z=176.47], EntityZombie['僵尸'/7117, l='MpServer', x=57.46, y=-15.25, z=7.63], EntityCustomNpc['打我爆金币'/31190, l='MpServer', x=215.50, y=64.00, z=236.50], EntitySpider['蜘蛛'/80359, l='MpServer', x=286.72, y=63.00, z=199.72], EntitySpider['蜘蛛'/80358, l='MpServer', x=285.41, y=64.00, z=195.28], EntityZombie['僵尸'/80365, l='MpServer', x=190.50, y=64.00, z=212.50], EntityCreeper['爬行者'/80373, l='MpServer', x=216.59, y=67.00, z=209.00], EntitySkeleton['骷髅'/80374, l='MpServer', x=262.50, y=65.00, z=227.50], EntityCreeper['爬行者'/80378, l='MpServer', x=273.37, y=64.00, z=226.01], EntityCreeper['爬行者'/80380, l='MpServer', x=270.55, y=64.00, z=225.76], EntitySkeleton['骷髅'/80382, l='MpServer', x=285.50, y=64.00, z=217.50]]
+	Retry entities: 0 total; []
+	Server brand: kcauldron,cauldron,craftbukkit,mcpc,fml,forge
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2444)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:919)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_431, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 319223680 bytes (304 MB) / 1207959552 bytes (1152 MB) up to 17179869184 bytes (16384 MB)
+	JVM Flags: 11 total; -Xmx16384m -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32m -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -XX:-DontCompileHugeMethods -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 Optifine OptiFine_1.7.10_HD_U_C1 127 mods loaded, 127 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJA	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJA	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJA	Micdoodlecore{} [Micdoodle8 Core] (minecraft.jar) 
+	UCHIJA	ThE-core{1.0.0.1} [Thaumic Energistics Core] (minecraft.jar) 
+	UCHIJA	appliedenergistics2-core{rv3-beta-18} [Applied Energistics 2 Core] (minecraft.jar) 
+	UCHIJA	ThaumicTinkerer-preloader{0.1} [Thaumic Tinkerer Core] (minecraft.jar) 
+	UCHIJA	CodeChickenCore{1.0.7.47} [CodeChicken Core] (minecraft.jar) 
+	UCHIJA	NotEnoughItems{1.0.5.120} [Not Enough Items] ([系统 NEL]NotEnoughItems-1.7.10-1.0.5.120-universal.jar) 
+	UCHIJA	InputFix{1.7.10-v5} [InputFix] (minecraft.jar) 
+	UCHIJA	UraniumPlus{1.0} [Added title and actionbar support for client and server] ([系统 功能扩展]UraniumPlus-1.0.jar) 
+	UCHIJA	uniskinmod{1.2-dev4} [Universal Skin Mod] (minecraft.jar) 
+	UCHIJA	LambdaLib|Core{1.2.3} [LambdaLib|Core] (minecraft.jar) 
+	UCHIJA	ChocoPatcher{1.2} [Choco Patcher] (minecraft.jar) 
+	UCHIJA	<CoFH ASM>{000} [CoFH ASM] (minecraft.jar) 
+	UCHIJA	FastCraft{1.25} [FastCraft] ([系统 迅速工艺]fastcraft-1.25.jar) 
+	UCHIJA	uncraftingTable{1.4.7} [Uncrafting Table] ((拆解台）[1.7.10]UncraftingTable-1.4.7.jar) 
+	UCHIJA	Baubles{1.0.1.10} [Baubles] (Baubles-1.7.10-1.0.1.10.jar) 
+	UCHIJA	Thaumcraft{4.2.3.5} [Thaumcraft] ([神秘时代修复]1.7.10.jar) 
+	UCHIJA	TwilightForest{2.3.8dev} [The Twilight Forest] ((暮色森林）twilightforest-1.7.10-2.3.8.jar) 
+	UCHIJA	shincolle{1.7.10.rv26.2} [Shinkeiseikan Collection] ((舰娘)ShinColle-1.7.10.rv26.2.jar) 
+	UCHIJA	bdlib{1.9.4.109} [BD Lib] ([AE2 Stuff前置]bdlib-1.9.4.109-mc1.7.10.jar) 
+	UCHIJA	customnpcs{1.7.10d} [CustomNpcs] ([CustomNpc].jar) 
+	UCHIJA	CoFHCore{1.7.10R3.1.4} [CoFH Core] ([H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar) 
+	UCHIJA	appliedenergistics2{rv3-beta-18} [Applied Energistics 2] ([应用能源]-AE2-rv3-beta-18.jar) 
+	UCHIJA	Waila{1.5.10} [Waila] ([系统 物品显示信息 ]Waila-1.5.10_1.7.10.jar) 
+	UCHIJA	extracells{2.3.9} [Extra Cells 2] ([应用能源更多储存元件]-ExtraCells-2.3.9b188.jar) 
+	UCHIJA	thaumicenergistics{1.1.3.0} [Thaumic Energistics] ([H神秘能源]1.1.3.0.jar) 
+	UCHIJA	IC2{2.2.828-experimental} [IndustrialCraft 2] ([工业]industrialcraft-2-2.2.828-experimental.jar) 
+	UCHIJA	ForgeMultipart{1.1.2.331} [Forge Multipart] (ForgeMultipart-1.7.10-1.1.2.331-universal.jar) 
+	UCHIJA	GalacticraftCore{3.0.12} [Galacticraft Core] (（星系）GalacticraftCore-1.7-3.0.12.504.jar) 
+	UCHIJA	Mekanism{9.1.1} [Mekanism] ([通用机械]Mekanism-1.7.10-9.1.1.1031.jar) 
+	UCHIJA	MekanismGenerators{9.1.1} [MekanismGenerators] ([MEK发电]MekanismGenerators-1.7.10-9.1.1.1031.jar) 
+	UCHIJA	MekanismTools{9.1.1} [MekanismTools] ([MEK工具]MekanismTools-1.7.10-9.1.1.1031.jar) 
+	UCHIJA	craftguide{1.7.1.0} [CraftGuide] ([可选 G合成]CraftGuide-1.7.1.0-forge[1.7.10].jar) 
+	UCHIJA	inventorytweaks{1.59-dev-156-af3bc68} [Inventory Tweaks] ([可选 R整理]InventoryTweaks-1.59-dev-156.jar) 
+	UCHIJA	AS_UpdateCheck{1.1.6} [AtomicStryker Update Check Mod] ([可选 动态光源插件](两个都拖入mods).jar) 
+	UCHIJA	DynamicLights{1.3.8} [Dynamic Lights] ([可选 动态光源核心](两个都拖入mods).jar) 
+	UCHIJA	DynamicLights_onFire{1.0.4} [Dynamic Lights Burning Entity Module] ([可选 动态光源核心](两个都拖入mods).jar) 
+	UCHIJA	DynamicLights_creepers{1.0.4} [Dynamic Lights Creeper Module] ([可选 动态光源核心](两个都拖入mods).jar) 
+	UCHIJA	DynamicLights_dropItems{1.0.8} [Dynamic Lights EntityItem Module] ([可选 动态光源核心](两个都拖入mods).jar) 
+	UCHIJA	DynamicLights_entityClasses{1.0.1} [Dynamic Lights Entity Light Module] ([可选 动态光源核心](两个都拖入mods).jar) 
+	UCHIJA	DynamicLights_mobEquipment{1.0.8} [Dynamic Lights Mob Equipment Light Module] ([可选 动态光源核心](两个都拖入mods).jar) 
+	UCHIJA	DynamicLights_flameArrows{1.0.0} [Dynamic Lights Fiery Arrows Light Module] ([可选 动态光源核心](两个都拖入mods).jar) 
+	UCHIJA	DynamicLights_floodLights{1.0.2} [Dynamic Lights Flood Light] ([可选 动态光源核心](两个都拖入mods).jar) 
+	UCHIJA	DynamicLights_otherPlayers{1.0.8} [Dynamic Lights OtherPlayers Light Module] ([可选 动态光源核心](两个都拖入mods).jar) 
+	UCHIJA	DynamicLights_thePlayer{1.1.4} [Dynamic Lights Player Light Module] ([可选 动态光源核心](两个都拖入mods).jar) 
+	UCHIJA	mobends{0.20.1} [Mo' Bends] ([可选 弯曲动作]MoBends-0.20.1 for MC 1.7.10.jar) 
+	UCHIJA	BambooMod{Minecraft@MC_VERSION@ var@VERSION@} [BambooMod] ([和风]Bamboo-2.6.8.5.jar) 
+	UCHIJA	EMT{1.2.2} [Electro-Magic Tools] ([工业 电力魔法]ElectroMagicTools-1.2.3%5B1.7.10%5D.jar) 
+	UCHIJA	AdvancedSolarPanel{1.7.10-3.5.1} [Advanced Solar Panels] ([工业 高级太阳能]AdvancedSolarPanel-1.7.10-3.5.1-icere.jar) 
+	UCHIJA	VisibleRayGenerator{1.7.10-2.2.695-1} [VisibleRayGenerator] ([工业可见光]VisibleRayGenerator-1.7.10-2.2.695-1.jar) 
+	UCHIJA	supersolarpanel{1.7.10-1.1.1-release} [Super Solar Panel] ([工业超级太阳能]SSP-1.1.2-NEW-Photonic_Solar_Panel_1.7.10(1).jar) 
+	UCHIJA	GraviSuite{1.7.10-2.0.3} [Graviation Suite] ([工业重力装甲]GraviSuite-1.7.10-2.0.3[TFCN].jar) 
+	UCHIJA	IC2LaserFix{2.0} [IC2 Laser Fix] ([工业镭射枪]IC2LaserFix-1.7.10.jar) 
+	UCHIJA	NoIC2Destruction{1.0.0} [No IC2 Destruction] ([工业防爆]NoIC2Destruction-1.0.0-1.7.10.jar) 
+	UCHIJA	ae2stuff{0.5.1.9} [AE2 Stuff] ([应用能源ae2stuff]ae2stuff-rv3-0.5.1.9-mc1.7.10.jar) 
+	UCHIJA	flammpfeil.slashblade{mc1.7.10-r88} [SlashBlade] ([拔刀]SlashBlade-mc1.7.10-r88.jar) 
+	UCHIJA	saligia{1.0.0} [PROJECT_SALIGIA] ([拔刀附属 七宗罪]PROJECT_saligia_2.1.0.jar) 
+	UCHIJA	flammpfeil.nihil{mc1.7.x-r8} [Nihil] ([拔刀附属 似蛭]Nihil-mc1.7.x-r8.jar) 
+	UCHIJA	flammpfeil.frostwolf{mc1.7.2-r1} [FrostWolf] ([拔刀附属 冰狼之刃]FrostWolf-mc1.7.2-r1.1.jar) 
+	UCHIJA	flammpfeil.slashblade.blademaster{mc1.7.2-r1} [BladeMaster] ([拔刀附属 剑圣之刃]BladeMaster-mc1.7.2-r1.2.jar) 
+	UCHIJA	Botania{r1.8-249} [Botania] ([植物魔法修复]Botania r1.8-249.jar) 
+	UCHIJA	flammpfeil.slashblade.terra{mc1.7.10-r1} [SlashBlade-Terra] ([拔刀附属 大地之刃]SlashBlade-Terra-mc1.7.10-r1.jar) 
+	UCHIJA	flammpfeil.slashblade.kamuy{mc1.7.10-r6} [Kamuy] ([拔刀附属 神剑]SlashBlade-Kamuy-mc1.7.10-r6.jar) 
+	UCHIJA	negorerouse{1.0.0} [NegoreRouse] ([拔刀附属 尼格洛兹·无尽曈曚].jar) 
+	UCHIJA	balumg{1.0.0} [balumg] ([拔刀附属 巴鲁蒙格]r1Balmung 1.7.10-r1.0-1.jar) 
+	UCHIJA	flammpfeil.slashblade.laemmle{mc1.7.10-r1} [Slashblade-Laemmle] ([拔刀附属 幻魔练金拵]Slashblade-Laemmle-mc1.7.10-r1.jar) 
+	UCHIJA	GodFox{1.0.0} [GodFox] ([拔刀附属 御神刀[神狐]]GodFox1.1.5Final.jar) 
+	UCHIJA	flammpfeil.slashblade.kirisaya{r1} [SlashBlade-Kirisaya] ([拔刀附属 无神]Kirisaya-r1.jar) 
+	UCHIJA	flammpfeil.darkraven{mc1.7.2-r2} [DarkRaven] ([拔刀附属 暗鸦]DarkRaven-mc1.7.2-r2.jar) 
+	UCHIJA	flammpfeil.toyako{mc1.7.2-r1} [toyako] ([拔刀附属 洞爷湖]toyako-mc1.7.2-r1.jar) 
+	UCHIJA	flammpfeil.slashblade.exsa{mc1.7.10-r6} [SlashBlade-ExSa] ([拔刀附属 狂暴SA]SlashBlade-ExSa-r6.jar) 
+	UCHIJA	slashblade.yukari{mc1.7.10-r2} [Slashblade-yukari] ([拔刀附属 结月刀]Slashblade-yukari-mc1.7.10-r2.jar) 
+	UCHIJA	flammpfeil.fluorescentbar{mc1.7.2-r3} [fluorescentbar] ([拔刀附属 荧光]FluorescentBar-mc1.7.2-r3.jar) 
+	UCHIJA	lostblade{1.0.0} [Lostblade] ([拔刀附属 遗忘]Lostblade-1.0.0.jar) 
+	UCHIJA	flammpfeil.slashblade.zephyr{1.7.2 r1.2} [SlashBladeZephyr] ([拔刀附属 风雷太刀]SlashBlade_Zephyr-mc1.7.2-r1.2.2.jar) 
+	UCHIJA	Avaritia{1.13} [Avaritia] ([无尽]Avaritia-1.13.jar) 
+	UCHIJA	universalsingularities{1.7.10-8.0} [Universal Singularities] ([无尽 通用奇点]Universal Singularities [Version 8]-1.7.10.jar) 
+	UCHIJA	IronChest{6.0.62.742} [Iron Chest] ([更多箱子]1.7.10.jar) 
+	UCHIJA	lastsmith{1.0.0} [The Last Smith] ([最后的太刀匠人]lastsmith.jar) 
+	UCHIJA	endercore{1.7.10-0.2.0.39_beta} [EnderCore] ([末影接口]EnderCore-1.7.10-0.2.0.39_beta.jar.jar) 
+	UCHIJA	EnderIO{1.7.10-2.3.0.429_beta} [Ender IO] ([末影接口]EnderIO-1.7.10-2.3.0.429_beta.jar.jar) 
+	UCHIJA	Forestry{4.2.16.64} [Forestry for Minecraft] ([林业]forestry_1.7.10-4.2.16.64.jar) 
+	UCHIJA	ExtraBotany{r1.0-21} [ExtraBotany] ([植物魔法 额外植物学]ExtraBotany-1.7.10-r1.0-21.jar) 
+	UCHIJA	ThermalFoundation{1.7.10R1.2.6} [Thermal Foundation] ([热力]ThermalFoundation-[1.7.10]1.2.6-118.jar) 
+	UCHIJA	ImmersiveEngineering{0.7.7} [Immersive Engineering] ([沉浸修复]ImmersiveEngineering-0.7.7.jar) 
+	UCHIJA	arcane_engineering{0.2.7} [Arcane Engineering] ([沉浸工程]arcane_engineering-0.2.7.jar) 
+	UCHIJA	ThermalExpansion{1.7.10R4.1.5} [Thermal Expansion] ([热力]ThermalExpansion-[1.7.10]4.1.5-248.jar) 
+	UCHIJA	ThaumicTinkerer{unspecified} [Thaumic Tinkerer] ([神秘工匠修复]1.7.10mssj.jar) 
+	UCHIJA	tcinventoryscan{1.0.11} [TC Inventory Scanning] ([神秘时代库存扫描]tcinventoryscan-mc1.7.10-1.0.11黑寒冰汉化.jar) 
+	UCHIJA	TCBotaniaExoflame{1.0} [TCBotaniaExoflame] ([神秘时代植物魔法冶炼火]TCBotaniaExoflame-1.7.10-1.2.jar) 
+	UCHIJA	ForbiddenMagic{1.7.10-0.575} [Forbidden Magic] ([神秘禁忌魔法]Forbidden+Magic-1.7.10-0.575.jar) 
+	UCHIJA	TaintedMagic{r7.82} [Tainted Magic] ([神秘附属 污秽魔法]Tainted-Magic-r7.82.jar) 
+	UCHIJA	ProjectE{1.7.10-PE1.10.1} [ProjectE] ([等价交换]ProjectE-1.7.10-PE1.10.1.jar) 
+	UCHIJA	ReiMinimap{1.7.10} [Rei's Minimap] ([系统  小地图]ReiMinimap-1.7.10-3.6_CN by wolski.jar) 
+	UCHIJA	DamageIndicatorsMod{3.2.0} [Damage Indicators] ([系统  血条]1.7.10.jar) 
+	UCHIJA	audiobuffer{1.0.0} [AudioBuffer] ([系统 Mod版-1.8(不包括)以下]AudioBuffer-1.0.jar) 
+	UCHIJA	AntiCheat3{AntiCheat 3 Mod} [AntiCheat 3 Mod] ([系统 NEL]Anti-1.6.1_1.7.10.jar) 
+	UCHIJA	NEIAddons{1.12.14.40} [NEI Addons] ([系统 NEL]neiaddons-mc1.7.10.jar) 
+	UCHIJA	NEIAddons|Developer{1.12.14.40} [NEI Addons: Developer Tools] ([系统 NEL]neiaddons-mc1.7.10.jar) 
+	UCHIJA	NEIAddons|AppEng{1.12.14.40} [NEI Addons: Applied Energistics 2] ([系统 NEL]neiaddons-mc1.7.10.jar) 
+	UCHIJA	NEIAddons|Botany{1.12.14.40} [NEI Addons: Botany] ([系统 NEL]neiaddons-mc1.7.10.jar) 
+	UCHIJA	NEIAddons|Forestry{1.12.14.40} [NEI Addons: Forestry] ([系统 NEL]neiaddons-mc1.7.10.jar) 
+	UCHIJA	NEIAddons|CraftingTables{1.12.14.40} [NEI Addons: Crafting Tables] ([系统 NEL]neiaddons-mc1.7.10.jar) 
+	UCHIJA	NEIAddons|ExNihilo{1.12.14.40} [NEI Addons: Ex Nihilo] ([系统 NEL]neiaddons-mc1.7.10.jar) 
+	UCHIJA	neiintegration{1.1.2} [NEI Integration] ([系统 NEL]NEIIntegration-MC1.7.10-1.1.2.jar) 
+	UCHIJA	NEIPlugins{1.1.0.11-unofficial} [NEI Plugins Unofficial] ([系统 NEL]NEIPlugins-1.1.0.11.jar) 
+	UCHIJA	thaumcraftneiplugin{1.7.10-1.6a} [Thaumcraft NEI Plugin] ([系统 NEL]thaumcraftneiplugin-1.7.10-1.6a.jar) 
+	UCHIJA	UnicodeFontFixer{1.1.12-mc1.7.10} [UnicodeFontFixer] ([系统 神秘字体修复]1.7.10.jar) 
+	UCHIJA	LambdaLib{1.2.3} [LambdaLib] ([超能力前置]LambdaLib-1.2.3.jar) 
+	UCHIJA	academy-craft{1.0.7} [Academy Craft] ([超能力修复]AcademyCraft-1.0.7-vecfix.jar) 
+	UCHIJA	MagicBees{2.4.3} [Magic Bees] ([魔法蜜蜂]magicbees-1.7.10-2.4.3.jar) 
+	UCHIJA	BrandonsCore{1.0.0.12} [Brandon's Core] ([龙研究前置]BrandonsCore-1.0.0.12.jar) 
+	UCHIJA	DraconicEvolution{1.0.2h} [Draconic Evolution] ([龙之研究]Draconic-Evolution-1.7.10-1.0.2h.jar) 
+	UCHIJA	ChickenChunks{1.3.4.19} [ChickenChunks] (ChickenChunks-1.7.10-1.3.4.19-universal.jar) 
+	UCHIJA	MineTweaker3{3.0.10} [MineTweaker 3] (MineTweaker3-1.7.10-3.0.10B.jar) 
+	UCHIJA	MTRM{1.0} [MineTweakerRecipeMaker] (MineTweakerRecipeMaker-1.7.10-1.1.jar) 
+	UCHIJA	modtweaker2{0.9.6} [Mod Tweaker 2] (modtweaker2.jar) 
+	UCHIJA	NBTEdit{1.7.2.2} [In-game NBTEdit] (NBTEdit_1.7.10.jar) 
+	UCHIJA	recipemod{0.2} [NoMoreRecipeConflict] (NoMoreRecipeConflict-0.2(1.7.10) (1).jar) 
+	UCHIJA	Torcherino{2.2s} [Torcherino] (加速火把Torcherino-1.7.10-2.2s.jar) 
+	UCHIJA	ThermalDynamics{1.7.10R1.2.1} [Thermal Dynamics] (热力管道附属-1.7.10-ThermalDynamics-1.2.1-172.jar) 
+	UCHIJA	GalacticraftMars{3.0.12} [Galacticraft Planets] (（星系前置）Galacticraft-Planets-1.7-3.0.12.504.jar) 
+	UCHIJA	GalaxySpace{1.2.14 Pre-Final} [GalaxySpace] (（星系扩展）星空GalaxySpace-1.7.10-1.2.14.jar) 
+	UCHIJA	McMultipart{1.1.2.331} [Minecraft Multipart Plugin] (ForgeMultipart-1.7.10-1.1.2.331-universal.jar) 
+	UCHIJA	ForgeMicroblock{1.1.2.331} [Forge Microblocks] (ForgeMultipart-1.7.10-1.1.2.331-universal.jar) 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 566.07' Renderer: 'NVIDIA GeForce RTX 4060 Laptop GPU/PCIe/SSE2'
+	CoFHCore: -[1.7.10]3.1.4-329
+	AE2 Version: beta rv3-beta-18 for Forge 10.13.4.1448
+	ThermalFoundation: -[1.7.10]1.2.6-118
+	ThermalExpansion: -[1.7.10]4.1.5-248
+	ThermalDynamics: -[1.7.10]1.2.1-172
+	List of loaded APIs: 
+		* appliedenergistics2|API (rv3) from [应用能源]-AE2-rv3-beta-18.jar
+		* BambooAPI|Core (1.0) from [和风]Bamboo-2.6.8.5.jar
+		* Baubles|API (1.0.1.10) from Baubles-1.7.10-1.0.1.10.jar
+		* BotaniaAPI (61) from [无尽]Avaritia-1.13.jar
+		* CoFHAPI (1.7.10R1.0.10) from [通用机械]Mekanism-1.7.10-9.1.1.1031.jar
+		* CoFHAPI|block (1.7.10R1.0.13) from [末影接口]EnderIO-1.7.10-2.3.0.429_beta.jar.jar
+		* CoFHAPI|core (1.7.10R1.3.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHAPI|energy (1.7.10R1.3.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHAPI|fluid (1.7.10R1.3.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHAPI|inventory (1.7.10R1.3.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHAPI|item (1.7.10R1.0.13) from [沉浸修复]ImmersiveEngineering-0.7.7.jar
+		* CoFHAPI|modhelpers (1.7.10R1.3.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHAPI|tileentity (1.7.10R1.3.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHAPI|transport (1.7.10R1.0.13) from [末影接口]EnderIO-1.7.10-2.3.0.429_beta.jar.jar
+		* CoFHAPI|world (1.7.10R1.3.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib|audio (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib|gui (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib|gui|container (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib|gui|element (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib|gui|element|listbox (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib|gui|slot (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib|inventory (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib|render (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib|render|particle (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib|util (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib|util|helpers (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib|util|position (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib|world (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* CoFHLib|world|feature (1.7.10R1.2.1) from [H热力膨胀]CoFHCore-[1.7.10]3.1.4-329.jar
+		* DraconicEvolution|API (1.2) from [龙之研究]Draconic-Evolution-1.7.10-1.0.2h.jar
+		* EnderIOAPI (0.0.2) from [末影接口]EnderIO-1.7.10-2.3.0.429_beta.jar.jar
+		* EnderIOAPI|Redstone (0.0.2) from [末影接口]EnderIO-1.7.10-2.3.0.429_beta.jar.jar
+		* EnderIOAPI|Teleport (0.0.2) from [末影接口]EnderIO-1.7.10-2.3.0.429_beta.jar.jar
+		* EnderIOAPI|Tools (0.0.2) from [末影接口]EnderIO-1.7.10-2.3.0.429_beta.jar.jar
+		* ForestryAPI|apiculture (4.8.0) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* ForestryAPI|arboriculture (4.2.1) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* ForestryAPI|circuits (3.1.0) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* ForestryAPI|core (5.0.0) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* ForestryAPI|farming (2.1.0) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* ForestryAPI|food (1.1.0) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* ForestryAPI|fuels (2.0.1) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* ForestryAPI|genetics (4.7.1) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* ForestryAPI|hives (4.1.0) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* ForestryAPI|lepidopterology (1.3.0) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* ForestryAPI|mail (3.0.0) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* ForestryAPI|multiblock (3.0.0) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* ForestryAPI|recipes (5.4.0) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* ForestryAPI|storage (3.0.0) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* ForestryAPI|world (2.1.0) from [林业]forestry_1.7.10-4.2.16.64.jar
+		* Galacticraft API (1.0) from （星系）GalacticraftCore-1.7-3.0.12.504.jar
+		* IC2API (1.0) from [工业]industrialcraft-2-2.2.828-experimental.jar
+		* ImmersiveEngineering|API (1.0) from [沉浸修复]ImmersiveEngineering-0.7.7.jar
+		* MekanismAPI|core (9.0.0) from [通用机械]Mekanism-1.7.10-9.1.1.1031.jar
+		* MekanismAPI|energy (9.0.0) from [通用机械]Mekanism-1.7.10-9.1.1.1031.jar
+		* MekanismAPI|gas (9.0.0) from [通用机械]Mekanism-1.7.10-9.1.1.1031.jar
+		* MekanismAPI|infuse (9.0.0) from [通用机械]Mekanism-1.7.10-9.1.1.1031.jar
+		* MekanismAPI|laser (9.0.0) from [通用机械]Mekanism-1.7.10-9.1.1.1031.jar
+		* MekanismAPI|reactor (9.0.0) from [通用机械]Mekanism-1.7.10-9.1.1.1031.jar
+		* MekanismAPI|recipe (9.0.0) from [通用机械]Mekanism-1.7.10-9.1.1.1031.jar
+		* MekanismAPI|transmitter (9.0.0) from [通用机械]Mekanism-1.7.10-9.1.1.1031.jar
+		* MekanismAPI|util (9.0.0) from [通用机械]Mekanism-1.7.10-9.1.1.1031.jar
+		* ProjectEAPI (7) from [等价交换]ProjectE-1.7.10-PE1.10.1.jar
+		* RailcraftAPI|crafting (1.0.0) from [沉浸修复]ImmersiveEngineering-0.7.7.jar
+		* Thaumcraft|API (4.2.2.0) from [神秘时代修复]1.7.10.jar
+		* thaumicenergistics|API (1.1) from [H神秘能源]1.1.3.0.jar
+		* WailaAPI (1.2) from [系统 物品显示信息 ]Waila-1.5.10_1.7.10.jar
+	EnderIO: Found the following problem(s) with your installation:
+                  * Optifine is installed. This is NOT supported.
+                  * Our API got loaded from [末影接口]EnderIO-1.7.10-2.3.0.429_beta.jar.jar. That's unexpected.
+                  * Our API got loaded from [末影接口]EnderIO-1.7.10-2.3.0.429_beta.jar.jar. That's unexpected.
+                  * Our API got loaded from [末影接口]EnderIO-1.7.10-2.3.0.429_beta.jar.jar. That's unexpected.
+                  * An unknown AE2 API is installed (rv3 from [应用能源]-AE2-rv3-beta-18.jar).
+                    Ender IO was build against API version rv2 and may or may not work with a newer version.
+                  * Our API got loaded from [末影接口]EnderIO-1.7.10-2.3.0.429_beta.jar.jar. That's unexpected.
+                 This may have caused the error. Try reproducing the crash WITHOUT this/these mod(s) before reporting it.
+	Forestry : Warning: You have mods that change the behavior of Minecraft, ForgeModLoader, and/or Minecraft Forge to your client: 
+Optifine
+These may have caused this error, and may not be supported. Try reproducing the crash WITHOUT these mods, and report it then.
+	AE2 Integration: IC2:ON, RotaryCraft:OFF, RC:OFF, BuildCraftCore:OFF, BuildCraftTransport:OFF, BuildCraftBuilder:OFF, RF:ON, RFItem:ON, MFR:OFF, DSU:ON, FZ:OFF, FMP:ON, RB:OFF, CLApi:OFF, Waila:ON, InvTweaks:ON, NEI:ON, CraftGuide:ON, Mekanism:ON, ImmibisMicroblocks:OFF, BetterStorage:OFF, OpenComputers:OFF, PneumaticCraft:OFF
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: NVIDIA GeForce RTX 4060 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 566.07, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

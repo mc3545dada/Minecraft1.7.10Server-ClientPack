@@ -1,0 +1,49 @@
+# 汉化：尘曲, 大刘
+settings:
+  config:
+    # 将OP设置为完全管理权限
+    opOverrides: true
+    
+    # 是否开启在线验证
+    validate_toggle: true
+    # **********************************************************************************************************************************
+    # *** ==================================================== 同意使用命令方块 ==================================================== ***
+    # **********************************************************************************************************************************
+    allow_commandblocks: true
+    
+  data:
+    save:
+      # 保存配置文件分钟间隔
+      minutes: 10
+      # 备份文件保留多少小时
+      hours: 24
+      
+  logging:
+    # GroupManager 的日志详细程度等级   详细<-------->不详细 .
+    # 填入以下值 - ALL,CONFIG,FINE,FINER,FINEST,INFO,OFF,SEVERE,WARNING
+    level: INFO
+    
+  mirrors:
+        # 多世界设置,世界列表中子世界将参照父世界的设置.
+        # 第一个世界 'world' 是主世界名称
+        # 子世界 'world_nether' 和 'world_the_end' 将会
+        # 与父世界使用相同的玩家/用户组文件.
+        # 每个子世界可以设置镜像的 'groups', 'users' 或者与父世界使用一样的设置.
+        # all_unnamed_worlds将会使用所有未定义的世界
+        world:
+          world_nether:
+          - users
+          - groups
+          world_the_end:
+          - users
+          - groups
+          all_unnamed_worlds:
+          - users
+          - groups
+    #  world2:      (World2 将会拥有自己的独立设置)
+    #    world3:
+    #    - users    (World3 使用 world2 的 users.yml,但是使用自己独立的 groups.yml)
+    #    world4:
+    #    - groups   (World4 使用 world2 的 groups.yml,但是使用自己独立的 users.yml)
+    #  world5:
+    #    - world6   (这个世界使用从world5镜像过来的设置文件)

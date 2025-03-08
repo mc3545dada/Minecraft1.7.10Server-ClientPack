@@ -1,0 +1,11 @@
+# ColorMOTD Config
+OnlineMsg: "&a在线人数: &b%ONLINE%&d/&2%MAXPLAYER%"
+Motd: 
+- '&b欢迎来到我们服务器~这是第一条消息\n&d现在时间: &e%DATE% %TIME%'
+- '&b欢迎来到我们服务器~这是第二条消息\n&d在线人数: &e%ONLINE%'
+- '&b欢迎来到我们服务器~这是第三条消息\n&d您的位置: &e%LOC%&d,服务商: &e%ISP%'
+Players: 
+- '&b啦啦啦'
+- '&a这是默认的消息哦'
+ServiceModeMOTD: '&c服务器维护中,请等待维护完成...'
+ServiceModeKickCause: '&c服务器维护中,请等待维护完成再进入服务器!'
